@@ -75,8 +75,40 @@ router.get('/login', (req, res) => {
     res.redirect('/profile');
     return;
   }
-
-  res.render('login');
+res.render('login');
 });
+
+
+
+ 
+
+
+
+
+router.get('/signup', (req, res) => {
+  res.render('signup', { layout: 'main' });
+});
+
+
+router.get('/logout', async (req, res) => {
+    req.session.destroy();
+    res.status(204).end();
+    res.render('homepage');
+    return;
+});
+
+
+
+
+//router.get('/logout', async (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+ // if (req.session.logged_in) {
+    
+   // res.redirect('/profile');
+  //  return;
+  //}
+
+  //res.render('login');
+//});
 
 module.exports = router;
