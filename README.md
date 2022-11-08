@@ -11,7 +11,7 @@
  - [Questions](#Questions)
 
  ## Description
- The Tech Blog is a technical blog site where developers can publish their thoughts regarding concepts, advancements and new
+ The Tech Blog is a site where developers can publish their thoughts regarding concepts, advancements and new
  technologies.   After signing up or logging in the user is presented with a page that allows them to blog.   Once added, the blog displays on a home page with other bloggers.   The user has the opportunity to delete or add blogs from their dashboard.
  The site was built using Javascript, Node.js, MYSQL, Sequelize and express-handlebars.
  
